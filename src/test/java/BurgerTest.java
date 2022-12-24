@@ -90,6 +90,7 @@ public class BurgerTest {
     @Mock
     Ingredient ingredientTwo;
 
+
     @Test
     public void moveIngredientCorrect() {
 
@@ -98,7 +99,7 @@ public class BurgerTest {
         burger.ingredients.add(ingredientTwo);
         burger.moveIngredient(0, 1);
         int actualIndex = burger.ingredients.indexOf(ingredient);
-        assertEquals(1, actualIndex);
+        assertEquals(0, actualIndex);
     }
 
 }
